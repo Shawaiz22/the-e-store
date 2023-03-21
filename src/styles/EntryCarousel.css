@@ -1,0 +1,13 @@
+.itemCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5%;
+    
+}
+
+.carouselCustom{
+    margin-top: 6rem;
+    /* z-index: 3; */
+}

@@ -1,0 +1,21 @@
+.cartItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 10px;
+    flex-wrap: wrap;
+    /* border:2px solid yellow; */
+    width: 70vw;
+    background-color:rgba(128, 128, 128, 0.401)
+}
+
+
+.cartStructure{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* border:2px solid brown; */
+    
+}

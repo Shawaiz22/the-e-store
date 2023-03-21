@@ -1,0 +1,19 @@
+.categories{
+        padding: 5%;
+        /* display: flex; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+        /* border: 2px solid black; */
+        width: 100vw;
+        max-width: 100vw;
+}
+
+.main-category{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        max-width: 100vw;
+}
