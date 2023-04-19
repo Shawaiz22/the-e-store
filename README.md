@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+                                                                                # THE-E-STORE
+                                                                                
+# Live Preview : https://the-e-store.netlify.app                                                                                
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend version of my E-commerce application, which is fully functional and
 
 ## Available Scripts
 
