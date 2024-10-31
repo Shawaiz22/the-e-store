@@ -29,7 +29,7 @@ function EntryCarousel(props) {
                 <div className="carousel-item active ">
                     {/* <img className="d-block w-100" src="..." alt="First slide" /> */}
                     <div className="itemCard ">
-                    <ImageCard scroll={scrollMe} title={'Men\'s wear'} desc={'A huge variety of Men\'s wear'} src={'https://tse1.mm.bing.net/th?id=OIP.AtLVDY2qcMsgnencL1WAkwHaHa&pid=Api&P=0'} idx={'menswear'}/>
+                    <ImageCard scroll={scrollMe} title={'Men\'s wear'} desc={'A huge variety of Men\'s wear'} src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvqacYSanjLk0VEBbXltUpF1uxFIYgHAOLQ&s'} idx={'menswear'}/>
                     <ImageCard scroll={scrollMe} tilte={'Grocery'} desc={'All your Grocery items'} src={'https://tse3.mm.bing.net/th?id=OIP.IseyU-JoKGcyPL1eOHNZ_QHaEd&pid=Api&P=0'}  idx={'grocery'}/>
                     <ImageCard scroll={scrollMe} title={'Electornics'} desc={'Huge variety of Electronics'} src={'https://tse1.mm.bing.net/th?id=OIP.oXm1FFVEU5zAu53JHBq6EQHaD8&pid=Api&P=0'}  idx={'electronics'}/>
                     </div>
