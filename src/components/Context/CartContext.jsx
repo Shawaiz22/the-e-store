@@ -128,6 +128,7 @@ const CartContext = (props)=> {
     }
 
     const resetCart = () => {
+                    updateCartItemstate([]);
                     setCount(0);
                     setStats({noOfItems:0,totalQnty:0,totalAmt:0});
                     let blank=[];
