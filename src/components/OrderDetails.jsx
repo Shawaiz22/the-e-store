@@ -5,7 +5,7 @@ import { CartAllItems } from './Context/CartContext';
 function OrderDetails(props) {
 
     const cartItemHandle = useContext(CartAllItems);
-    let {itemCount,totalQty,totalPrice,updateQty} = cartItemHandle;
+    let {itemCount,totalQty,totalPrice,updateQty, resetCart} = cartItemHandle;
 
     let[cnt,setCnt] = useState(itemCount);
 
@@ -21,8 +21,8 @@ function OrderDetails(props) {
             alert('Please Select the Payment Method!')
         }
         else{
+            resetCart();
             window.location.replace('/placeOrder')
-            updateQty(0,1);
         }
     }
 
