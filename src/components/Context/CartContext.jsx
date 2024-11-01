@@ -34,6 +34,12 @@ const CartContext = (props)=> {
             }
         },[cartItemstate])
 
+        useEffect(()=>{
+            const unparsedItems = localStorage.getItem('AllCartItems');
+            const items = unparsedItems ? JSON.parse(unparsedItems) : [];
+            updateCartItemstate(items);
+        },[])
+
     // utility function which gives the updated values for the cart item state
     const updateVals = (arr)=>{
 
