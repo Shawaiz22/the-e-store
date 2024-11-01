@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 function Cart(props) {
 
     const cartItemHandle = useContext(CartAllItems);
-    const {CartItems,updateQty, itemCount} = cartItemHandle;
+    const {CartItems,updateQty, itemCount, resetCart} = cartItemHandle;
 
 
     let[myCart,setMyCart] = useState([]);
@@ -41,7 +41,7 @@ function Cart(props) {
 
         let cn = window.confirm('All the Cart Items will be removed, Are you sure to continue ?');
         if(cn){
-            updateQty(-1,1);
+            resetCart();
         } 
       }
 
