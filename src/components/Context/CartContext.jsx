@@ -3,6 +3,7 @@ import React,{createContext, useEffect, useState} from 'react';
 const CartAllItems = createContext({
     CartItems:null,
     CartUpdateItems:()=>{},
+    resetCart:()=>{},
     addToCart:()=>{},
     updateQty:()=>{},
     itemCount:0,
@@ -29,12 +30,7 @@ const CartContext = (props)=> {
                 setStats(updateVals(cartItemstate));
                 localStorage.setItem('AllCartItems',JSON.stringify(cartItemstate));
                 }
-                else{
-                    setCount(0);
-                    setStats({noOfItems:0,totalQnty:0,totalAmt:0});
-                    let blank=[];
-                    localStorage.setItem('AllCartItems',JSON.stringify(blank));
-                }
+              
             }
         },[cartItemstate])
 
@@ -131,8 +127,15 @@ const CartContext = (props)=> {
         updateCartItemstate(newCartItems);
     }
 
+    const resetCart = () => {
+                    setCount(0);
+                    setStats({noOfItems:0,totalQnty:0,totalAmt:0});
+                    let blank=[];
+                    localStorage.setItem('AllCartItems',JSON.stringify(blank));
+    }
+
     return (
-        <CartAllItems.Provider value={{CartItems:cartItemstate,CartUpDateItems:updateCartItemstate,addToCart:addToCart,updateQty:updateQuantity,itemCount:stats.noOfItems,totalQty:stats.totalQnty,totalPrice:stats.totalAmt}}>
+        <CartAllItems.Provider value={{CartItems:cartItemstate,CartUpDateItems:updateCartItemstate,addToCart:addToCart,updateQty:updateQuantity,itemCount:stats.noOfItems,totalQty:stats.totalQnty,totalPrice:stats.totalAmt, resetCart}}>
         {props.children}
         </CartAllItems.Provider>
     );
